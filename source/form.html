@@ -39,10 +39,10 @@
   </header>
 
   <main class="page-main">
-    <div class="page-main__wrapper">
-      <h1 class="page-heading page-main__title">Подбор программы</h1>
+    <div class="page-main__wrapper main-form__wrapper">
+      <h1 class="page-heading">Подбор программы</h1>
 
-      <p class="page-main__description text text--large">Заполните анкету, и мы подберем программу питания для вашего
+      <p class="page-main__description">Заполните анкету, и мы подберем программу питания для вашего
         кота</p>
 
       <form class="main-form" method="get" action="https://echo.htmlacademy.ru">
@@ -51,18 +51,18 @@
 
           <ul class="main-form__list">
             <li class="main-form__item">
-              <input class="main-form__input text text--large" type="text" name="cat-name" id="cat-name" required>
-              <label class="main-form__label text text--large" for="cat-name">Имя:*</label>
+              <input class="main-form__input" type="text" name="cat-name" id="cat-name" required>
+              <label class="main-form__label" for="cat-name">Имя:*</label>
             </li>
 
             <li class="main-form__item">
-              <input class="main-form__input text text--large" type="number" name="cat-weight" id="cat-weight" required>
-              <label class="main-form__label text text--large" for="cat-weight">Вес (кг):*</label>
+              <input class="main-form__input" type="number" name="cat-weight" id="cat-weight" required>
+              <label class="main-form__label" for="cat-weight">Вес (кг):*</label>
             </li>
 
             <li class="main-form__item">
-              <input class="main-form__input text text--large" type="number" name="cat-age" id="cat-age">
-              <label class="main-form__label text text--large" for="cat-age">Возраст (лет):</label>
+              <input class="main-form__input" type="number" name="cat-age" id="cat-age">
+              <label class="main-form__label" for="cat-age">Возраст (лет):</label>
             </li>
           </ul>
         </fieldset>
@@ -73,67 +73,67 @@
           <ul class="main-form__list">
             <li class="main-form__item">
               <input class="main-form__input" type="radio" name="weight" value="lose-weight" id="lose-weight" checked>
-              <label class="main-form__label text text--large" for="lose-weight">Похудение</label>
+              <label class="main-form__label main-form__label--darken" for="lose-weight">Похудение</label>
             </li>
 
             <li class="main-form__item">
               <input class="main-form__input" type="radio" name="weight" value="weight-gain" id="weight-gain">
-              <label class="main-form__label text text--large" for="weight-gain">Набор массы</label>
+              <label class="main-form__label main-form__label--darken" for="weight-gain">Набор массы</label>
             </li>
 
             <li class="main-form__item">
               <input class="main-form__input" type="radio" name="weight" value="consult" id="consult">
-              <label class="main-form__label text text--large" for="consult">Не знаю (нужен ваш совет)</label>
+              <label class="main-form__label main-form__label--darken" for="consult">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="main-form__fieldset">
-          <legend class="main-form__fieldset-title text text--large">Контактные данные (владельца кота)</legend>
+          <legend class="main-form__fieldset-title">Контактные данные (владельца кота)</legend>
 
           <ul class="main-form__list">
             <li class="main-form__item">
-              <input class="main-form__input text text--large" type="email" name="owner-email" id="owner-email"
+              <input class="main-form__input" type="email" name="owner-email" id="owner-email"
                 required>
-              <label class="main-form__label text text--large" for="owner-email">E-mail:*</label>
+              <label class="main-form__label" for="owner-email">E-mail:*</label>
             </li>
 
             <li class="main-form__item">
-              <input class="main-form__input text text--large" type="tel" name="owner-tel" id="owner-tel" required>
-              <label class="main-form__label text text--large" for="owner-tel">Телефон:*</label>
+              <input class="main-form__input" type="tel" name="owner-tel" id="owner-tel" required>
+              <label class="main-form__label" for="owner-tel">Телефон:*</label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="main-form__fieldset">
-          <legend class="main-form__fieldset-title text text--large">Комментарий</legend>
+          <legend class="main-form__fieldset-title">Комментарий</legend>
 
-          <textarea class="main-form__input main-form__input--textarea text text--large" name="cat-behaviour"
+          <textarea class="main-form__input main-form__input--textarea" name="cat-behaviour"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="main-form__fieldset">
-          <legend class="main-form__fieldset-title text text--large">Дополнительно</legend>
+          <legend class="main-form__fieldset-title">Дополнительно</legend>
 
           <ul class="main-form__list">
             <li class="main-form__item">
               <input class="main-form__input" type="checkbox" name="sweetener" id="sweetener" checked>
-              <label class="main-form__label text text--large" for="sweetener">Сахарозаменитель</label>
+              <label class="main-form__label main-form__label--darkest" for="sweetener">Сахарозаменитель</label>
             </li>
 
             <li class="main-form__item">
               <input class="main-form__input" type="checkbox" name="water" id="water">
-              <label class="main-form__label text text--large" for="water">Питьевая вода</label>
+              <label class="main-form__label main-form__label--darkest" for="water">Питьевая вода</label>
             </li>
 
             <li class="main-form__item">
               <input class="main-form__input" type="checkbox" name="milk" id="milk">
-              <label class="main-form__label text text--large" for="milk">Молоко</label>
+              <label class="main-form__label main-form__label--darkest" for="milk">Молоко</label>
             </li>
 
             <li class="main-form__item">
               <input class="main-form__input" type="checkbox" name="vitamins" id="vitamins">
-              <label class="main-form__label text text--large" for="vitamins">Витамины</label>
+              <label class="main-form__label main-form__label--darkest" for="vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
