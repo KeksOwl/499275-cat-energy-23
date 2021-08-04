@@ -1,0 +1,20 @@
+.contacts__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__link {
+  &:hover path {
+    fill: @main-green;
+  }
+
+  &--stroke:hover path {
+    fill: none;
+    stroke: @main-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -8,8 +8,22 @@
   font-family: "Oswald Medium", Arial, sans-serif;
   font-size: 20px;
   line-height: 1em;
+
   color: @main-black;
 
-  text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--actual {
+    &:hover, &:active {
+      opacity: 1;
+    }
+  }
 }
