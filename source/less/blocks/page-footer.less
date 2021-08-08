@@ -1,0 +1,25 @@
+.page-footer {
+  background-color: @basic-grey;
+}
+
+.page-footer__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page-footer__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--actual {
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+  }
+}
