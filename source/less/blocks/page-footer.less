@@ -5,6 +5,14 @@
 .page-footer__wrapper {
   margin-left: 20px;
   margin-right: 20px;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+
+  @media (min-width: @tablet-width) {
+    grid-template-rows: none;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .page-footer__logo {
