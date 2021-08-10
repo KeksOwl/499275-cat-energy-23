@@ -2,6 +2,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-flow: column wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .site-list__link {
