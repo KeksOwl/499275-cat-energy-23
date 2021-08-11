@@ -3,10 +3,26 @@
   margin-right: 20px;
 }
 
+.catalog__wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
 .catalog__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  display: grid;
+  grid-template-rows: 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .catalog__item-text {

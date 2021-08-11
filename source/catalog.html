@@ -3,48 +3,51 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-    </a>
+    <div class="page-header__main-wrapper">
+      <a href="index.html" class="page-header__logo">
+        <img src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </a>
 
-    <a href="index.html" class="page-header__logo">
-      <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
-    </a>
+      <a href="index.html" class="page-header__logo">
+        <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
+      </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html" class="site-list__link">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link site-list__link--actual">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html" class="site-list__link">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html" class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link site-list__link--actual">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html" class="site-list__link">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
     <h1 class="page-heading page-main__title">Каталог продукции</h1>
 
-    <section class="catalog">
-      <h2 class="visually-hidden">Список основных товаров</h2>
+    <div class="catalog__wrapper">
+      <section class="catalog">
+        <h2 class="visually-hidden">Список основных товаров</h2>
 
-      <div class="catalog__wrapper">
         <ul class="catalog__list">
           <li class="catalog__item" id="catalog-pro">
             <a href="#" class="catalog__item-text">Cat Energy Pro 500 г</a>
@@ -215,48 +218,48 @@
               все</a>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section class="extra">
-      <h2 class="heading extra__title">Дополнительные товары</h2>
+      <section class="extra">
+        <h2 class="heading extra__title">Дополнительные товары</h2>
 
-      <div class="extra__wrapper">
-        <ul class="extra__list">
-          <li class="extra__item">
-            <p class="extra__item-name">Сахарозаменитель</p>
-            <p class="extra__item-description text">1 упаковка (100 г)</p>
-            <p class="extra__item-number text">200 Р.</p>
-            <a href="#" class="button button__main catalog__item-button">Заказать</a>
-          </li>
+        <div class="extra__wrapper">
+          <ul class="extra__list">
+            <li class="extra__item">
+              <p class="extra__item-name">Сахарозаменитель</p>
+              <p class="extra__item-description text">1 упаковка (100 г)</p>
+              <p class="extra__item-number text">200 Р.</p>
+              <a href="#" class="button button__main catalog__item-button">Заказать</a>
+            </li>
 
-          <li class="extra__item">
-            <p class="extra__item-name">Питьевая вода</p>
-            <p class="extra__item-description text">5 литров</p>
-            <p class="extra__item-number text">50 Р.</p>
-            <a href="#" class="button button__main catalog__item-button">Заказать</a>
-          </li>
+            <li class="extra__item">
+              <p class="extra__item-name">Питьевая вода</p>
+              <p class="extra__item-description text">5 литров</p>
+              <p class="extra__item-number text">50 Р.</p>
+              <a href="#" class="button button__main catalog__item-button">Заказать</a>
+            </li>
 
-          <li class="extra__item">
-            <p class="extra__item-name">Молоко</p>
-            <p class="extra__item-description text">1 литр</p>
-            <p class="extra__item-number text">100 Р.</p>
-            <a href="#" class="button button__main catalog__item-button">Заказать</a>
-          </li>
+            <li class="extra__item">
+              <p class="extra__item-name">Молоко</p>
+              <p class="extra__item-description text">1 литр</p>
+              <p class="extra__item-number text">100 Р.</p>
+              <a href="#" class="button button__main catalog__item-button">Заказать</a>
+            </li>
 
-          <li class="extra__item">
-            <p class="extra__item-name">Витамины</p>
-            <p class="extra__item-description text">1 упаковка (30 г)</p>
-            <p class="extra__item-number text">330 Р.</p>
-            <a href="#" class="button button__main catalog__item-button">Заказать</a>
-          </li>
-        </ul>
+            <li class="extra__item">
+              <p class="extra__item-name">Витамины</p>
+              <p class="extra__item-description text">1 упаковка (30 г)</p>
+              <p class="extra__item-number text">330 Р.</p>
+              <a href="#" class="button button__main catalog__item-button">Заказать</a>
+            </li>
+          </ul>
 
-        <div class="extra__special-offer">
-          <p class="extra__special-offer-text text">Закажите все и получите чехол для кота в подарок!</p>
+          <div class="extra__special-offer">
+            <p class="extra__special-offer-text text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
@@ -264,8 +267,10 @@
       <div class="location__wrapper">
         <h2 class="visually-hidden">Как нас найти</h2>
 
-        <h3 class="heading heading--min location__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="text location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="location__content-wrapper">
+          <h3 class="heading heading--min location__title">Приглашаем к сотрудничеству дилеров!</h3>
+          <p class="text location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
 
       <iframe class="location__map"

@@ -3,39 +3,42 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-    </a>
+    <div class="page-header__main-wrapper">
+      <a href="index.html" class="page-header__logo">
+        <img src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </a>
 
-    <a href="index.html" class="page-header__logo">
-      <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
-    </a>
+      <a href="index.html" class="page-header__logo">
+        <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
+      </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html" class="site-list__link">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">Каталог продукции</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link site-list__link--actual">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html" class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html" class="site-list__link">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link site-list__link--actual">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -46,62 +49,65 @@
         кота</p>
 
       <form class="main-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="main-form__fieldset">
-          <legend class="visually-hidden">Основная информация (о коте)</legend>
+        <div class="main-form__inner">
+          <fieldset class="main-form__fieldset">
+            <legend class="visually-hidden">Основная информация (о коте)</legend>
 
-          <ul class="main-form__list">
-            <li class="main-form__item">
-              <input class="main-form__input" type="text" name="cat-name" id="cat-name" required>
-              <label class="main-form__label" for="cat-name">Имя:*</label>
-            </li>
+            <ul class="main-form__list">
+              <li class="main-form__item main-form__item--reversed">
+                <input class="main-form__input" type="text" name="cat-name" id="cat-name" required>
+                <label class="main-form__label" for="cat-name">Имя:*</label>
+              </li>
 
-            <li class="main-form__item">
-              <input class="main-form__input" type="number" name="cat-weight" id="cat-weight" required>
-              <label class="main-form__label" for="cat-weight">Вес (кг):*</label>
-            </li>
+              <li class="main-form__item main-form__item--reversed">
+                <input class="main-form__input" type="number" name="cat-weight" id="cat-weight" required>
+                <label class="main-form__label" for="cat-weight">Вес (кг):*</label>
+              </li>
 
-            <li class="main-form__item">
-              <input class="main-form__input" type="number" name="cat-age" id="cat-age">
-              <label class="main-form__label" for="cat-age">Возраст (лет):</label>
-            </li>
-          </ul>
-        </fieldset>
+              <li class="main-form__item main-form__item--reversed">
+                <input class="main-form__input" type="number" name="cat-age" id="cat-age">
+                <label class="main-form__label" for="cat-age">Возраст (лет):</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="main-form__fieldset main-form__fieldset--border">
-          <legend class="visually-hidden">Цель</legend>
+          <fieldset class="main-form__fieldset main-form__fieldset--border">
+            <legend class="visually-hidden">Цель</legend>
 
-          <ul class="main-form__list">
-            <li class="main-form__item">
-              <input class="main-form__input" type="radio" name="weight" value="lose-weight" id="lose-weight" checked>
-              <label class="main-form__label main-form__label--darken" for="lose-weight">Похудение</label>
-            </li>
+            <ul class="main-form__list">
+              <li class="main-form__item">
+                <input class="main-form__input" type="radio" name="weight" value="lose-weight" id="lose-weight" checked>
+                <label class="main-form__label main-form__label--darken" for="lose-weight">Похудение</label>
+              </li>
 
-            <li class="main-form__item">
-              <input class="main-form__input" type="radio" name="weight" value="weight-gain" id="weight-gain">
-              <label class="main-form__label main-form__label--darken" for="weight-gain">Набор массы</label>
-            </li>
+              <li class="main-form__item">
+                <input class="main-form__input" type="radio" name="weight" value="weight-gain" id="weight-gain">
+                <label class="main-form__label main-form__label--darken" for="weight-gain">Набор массы</label>
+              </li>
 
-            <li class="main-form__item">
-              <input class="main-form__input" type="radio" name="weight" value="consult" id="consult">
-              <label class="main-form__label main-form__label--darken" for="consult">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+              <li class="main-form__item">
+                <input class="main-form__input" type="radio" name="weight" value="consult" id="consult">
+                <label class="main-form__label main-form__label--darken" for="consult">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
         <fieldset class="main-form__fieldset">
           <legend class="main-form__fieldset-title">Контактные данные (владельца кота)</legend>
 
           <ul class="main-form__list">
-            <li class="main-form__item">
-              <input class="main-form__input" type="email" name="owner-email" id="owner-email"
-                required>
-              <label class="main-form__label" for="owner-email">E-mail:*</label>
-            </li>
+            <div class="main-form__inner">
+              <li class="main-form__item main-form__item--reversed">
+                <input class="main-form__input" type="email" name="owner-email" id="owner-email" required>
+                <label class="main-form__label" for="owner-email">E-mail:*</label>
+              </li>
 
-            <li class="main-form__item">
-              <input class="main-form__input" type="tel" name="owner-tel" id="owner-tel" required>
-              <label class="main-form__label" for="owner-tel">Телефон:*</label>
-            </li>
+              <li class="main-form__item main-form__item--reversed">
+                <input class="main-form__input" type="tel" name="owner-tel" id="owner-tel" required>
+                <label class="main-form__label" for="owner-tel">Телефон:*</label>
+              </li>
+            </div>
           </ul>
         </fieldset>
 
@@ -115,7 +121,7 @@
         <fieldset class="main-form__fieldset">
           <legend class="main-form__fieldset-title">Дополнительно</legend>
 
-          <ul class="main-form__list">
+          <ul class="main-form__list main-form__list--extra">
             <li class="main-form__item">
               <input class="main-form__input" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="main-form__label main-form__label--darkest" for="sweetener">Сахарозаменитель</label>
@@ -138,9 +144,11 @@
           </ul>
         </fieldset>
 
-        <button class="button button__main main-form__button" type="submit">Отправить заявку</button>
+        <div class="main-form__footer">
+          <button class="button button__main main-form__button" type="submit">Отправить заявку</button>
 
-        <p class="main-form__tip text">* — Обязательные поля</p>
+          <p class="main-form__tip text">* — Обязательные поля</p>
+        </div>
       </form>
     </div>
   </main>
@@ -150,8 +158,10 @@
       <div class="location__wrapper">
         <h2 class="visually-hidden">Как нас найти</h2>
 
-        <h3 class="heading heading--min location__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="text location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="location__content-wrapper">
+          <h3 class="heading heading--min location__title">Приглашаем к сотрудничеству дилеров!</h3>
+          <p class="text location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
 
       <iframe class="location__map"
