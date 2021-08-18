@@ -11,15 +11,15 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__main-wrapper">
-      <a class="page-header__logo page-header__logo--actual">
+      <a class="page-header__logo page-header__logo-icon page-header__logo--actual">
         <img src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
       </a>
 
-      <a class="page-header__logo page-header__logo--actual">
+      <a class="page-header__logo page-header__logo-title page-header__logo--actual">
         <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -27,7 +27,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link site-list__link--actual">Главная</a>
+              <a class="site-list__link site-list__link--first site-list__link--actual">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html" class="site-list__link">Каталог продукции</a>
@@ -41,7 +41,7 @@
     </div>
 
     <section class="promo">
-      <h2 class="page-heading promo__title">Функциональное питание для котов</h2>
+      <h2 class="page-heading promo__title">Функциональное<br> питание для котов</h2>
 
       <p class="text promo__slogan">Занялся собой? Займись котом!</p>
       <div class="promo__image-wrapper">
@@ -60,17 +60,14 @@
 
       <ul class="bundles__list">
         <li class="bundles__item">
-          <h3 class="heading heading--middle bundles__title">Похудение</h3>
-          <img class="bundles__image" src="img/bundles/cat-slim.svg" width="36" height="50" alt="Сидящий худой котик">
+          <h3 class="heading heading--middle bundles__title bundles__title--slim">Похудение</h3>
           <p class="text bundles__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a href="catalog.html#catalog-slim" class="bundles__link">Каталог Slim</a>
         </li>
 
         <li class="bundles__item">
-          <h3 class="heading heading--middle bundles__title">Набор массы</h3>
-          <img class="bundles__image" src="img/bundles/cat-pro.svg" width="67" height="28"
-            alt="Большой серьёзный хищный кот">
+          <h3 class="heading heading--middle bundles__title bundles__title--pro">Набор массы</h3>
           <p class="text bundles__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы!</p>
           <a href="catalog.html#catalog-pro" class="bundles__link">Каталог Pro</a>
@@ -84,24 +81,24 @@
       <h3 class="heading features__title">Как это работает</h3>
 
       <ul class="features__list">
-        <li class="features__item">
-          <p class="text features__description">Функциональное питание содержит только полезные питательные вещества.
+        <li class="features__item features__item--first">
+          <p class="text features__description features__description--healthy">Функциональное питание<br> содержит только полезные<br> питательные вещества.
           </p>
         </li>
 
-        <li class="features__item">
-          <p class="text features__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
+        <li class="features__item features__item--second">
+          <p class="text features__description features__description--powder">Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и
             готово.
           </p>
         </li>
 
-        <li class="features__item">
-          <p class="text features__description">Замените один-два приема обычной еды на наше функциональное питание.
+        <li class="features__item features__item--third">
+          <p class="text features__description features__description--food">Замените один-два приема<br> обычной еды на наше<br> функциональное питание.
           </p>
         </li>
 
-        <li class="features__item">
-          <p class="text features__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+        <li class="features__item features__item--fourth">
+          <p class="text features__description features__description--time">Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!
           </p>
         </li>
       </ul>
@@ -129,7 +126,7 @@
               </div>
 
               <div class="example__item">
-                <p class="example__conclusion">Затраты на питание: 15 000 руб.</p>
+                <p class="example__conclusion">Затраты на питание: <span class="example__conclusion-space">15 000 руб.</span></p>
               </div>
             </div>
           </div>
@@ -138,22 +135,23 @@
             <h2 class="visually-hidden">Визуальное сравнение «до» и «после»</h2>
 
             <div class="example__difference-images-wrapper">
-              <div class="example__difference-image-wrapper">
-                <img class="example__difference-image" src="img/example/example-before-mobile.png" width="311"
+              <div class="example__difference-image-wrapper example__difference-image-wrapper--before">
+                <img class="example__difference-image" src="img/example/example-before-mobile.png" width="280"
                   height="232" alt="Борис до похудения">
               </div>
 
-              <div class="example__difference-image-wrapper">
-                <img class="example__difference-image" src="img/example/example-after-mobile.png" width="251"
-                  height="240" alt="Борис после похудения">
+              <div class="example__difference-image-wrapper example__difference-image-wrapper--after example__difference-image-wrapper--hidden">
+                <img class="example__difference-image" src="img/example/example-after-mobile.png" width="280"
+                  height="232" alt="Борис после похудения">
               </div>
             </div>
 
             <div class="example__difference-slider">
-              <!-- Здесь будет ползунок -->
-
-              <button class="button example__difference-slider-button">Было</button>
-              <button class="button example__difference-slider-button">Стало</button>
+              <button class="button example__difference-slider-button example__difference-slider-button--before example__difference-slider-button--pressed">Было</button>
+              <div class="example__difference-slider-scale">
+                <div class="example__difference-slider-bar"></div>
+              </div>
+              <button class="button example__difference-slider-button example__difference-slider-button--after">Стало</button>
             </div>
           </section>
         </div>
@@ -167,8 +165,8 @@
         <h2 class="visually-hidden">Как нас найти</h2>
 
         <div class="location__content-wrapper">
-          <h3 class="heading heading--min location__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="text location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <h3 class="heading heading--min location__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
+          <p class="text location__text">ул. Большая<br> Конюшенная, д. 19/8<br> <span class="location__text-space">Санкт-Петербург</span></p>
         </div>
       </div>
 
@@ -240,6 +238,9 @@
       </section>
     </div>
   </footer>
+
+  <script src="js/toggle.js"></script>
+  <script src="js/example-slider.js"></script>
 </body>
 
 </html>
