@@ -8,6 +8,12 @@
 
   min-height: 480px;
 
+  @media (min-width: @tablet-width) {
+    text-align: left;
+
+    align-content: flex-start;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -16,7 +22,7 @@
     min-height: 302px;
 
     background-color: @main-green;
-    background-image: url("../../img/header/page-header-cat.png");
+    background-image: url("../../img/promo/page-header-cat.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -25,38 +31,141 @@
     @media (min-width: @tablet-width) {
       display: none;
     }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+
+      content: "";
+      position: absolute;
+      min-width: 720px;
+      width: 50%;
+      min-height: 694px;
+
+      right: 0;
+      top: -110px;
+
+      background-color: @main-green;
+      background-image: url("../../img/promo/page-header-cat-large.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      z-index: -1;
+    }
   }
 }
 
 .promo__title {
+  margin: 23px 20px 0 20px;
+
   color: @main-white;
 
   @media (min-width: @tablet-width) {
     color: @main-black;
+
+    margin-top: 62px;
+    margin-left: 117px;
+    margin-right: 30px;
+
+    font-size: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 190px;
+    margin-right: 50%;
   }
 }
 
 .promo__slogan {
+  margin-top: 29px;
+  margin-bottom: 0;
+
   color: @main-white;
 
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     color: @main-black;
+
+    margin-top: 41px;
+    margin-left: 117px;
+    margin-right: 30px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 40px;
+    margin-left: 190px;
+    margin-right: 50%;
+  }
+}
+
+.promo__image-wrapper {
+  @media (min-width: @tablet-width) {
+    order: 4;
+
+    min-height: 526px;
+
+    margin-left: 30px;
+    margin-right: 30px;
+
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 185px;
   }
 }
 
 .promo__image {
-  min-width: 280px;
-  min-height: 270px;
+  width: 280px;
+  height: 270px;
+
+  margin-top: 29px;
 
   @media (min-width: @tablet-width) {
-    order: 4;
+    margin: 0;
+
+    position: absolute;
   }
 }
 
 .promo__button {
-  padding: 14px 88px;
+  font-size: 14px;
+  line-height: 18px;
+
+  min-width: 280px;
+  min-height: 40px;
+  width: 87.5%;
+
+  box-sizing: border-box;
+  padding: 14px;
+
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 49px;
+    margin-left: 117px;
+    margin-right: 30px;
+
+    text-align: center;
+
+    min-width: 244px;
+    min-height: 54px;
+    width: 31.7%;
+
+    padding: 7px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 52px;
+    margin-left: 190px;
+    margin-right: 50%;
+
+    width: 16.9%;
+  }
 }
