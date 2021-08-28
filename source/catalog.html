@@ -9,17 +9,17 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--border">
     <div class="page-header__main-wrapper">
-      <a href="index.html" class="page-header__logo">
+      <a href="index.html" class="page-header__logo page-header__logo-icon">
         <img src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
       </a>
 
-      <a href="index.html" class="page-header__logo">
+      <a href="index.html" class="page-header__logo page-header__logo-title">
         <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -27,7 +27,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html" class="site-list__link">Главная</a>
+              <a href="index.html" class="site-list__link site-list__link--first">Главная</a>
             </li>
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link site-list__link--actual">Каталог продукции</a>
@@ -229,33 +229,33 @@
               <p class="extra__item-name">Сахарозаменитель</p>
               <p class="extra__item-description text">1 упаковка (100 г)</p>
               <p class="extra__item-number text">200 Р.</p>
-              <a href="#" class="button button__main catalog__item-button">Заказать</a>
+              <a href="#" class="button button__main catalog__item-button extra__item-button">Заказать</a>
             </li>
 
             <li class="extra__item">
               <p class="extra__item-name">Питьевая вода</p>
               <p class="extra__item-description text">5 литров</p>
               <p class="extra__item-number text">50 Р.</p>
-              <a href="#" class="button button__main catalog__item-button">Заказать</a>
+              <a href="#" class="button button__main catalog__item-button extra__item-button">Заказать</a>
             </li>
 
             <li class="extra__item">
               <p class="extra__item-name">Молоко</p>
               <p class="extra__item-description text">1 литр</p>
               <p class="extra__item-number text">100 Р.</p>
-              <a href="#" class="button button__main catalog__item-button">Заказать</a>
+              <a href="#" class="button button__main catalog__item-button extra__item-button">Заказать</a>
             </li>
 
             <li class="extra__item">
               <p class="extra__item-name">Витамины</p>
               <p class="extra__item-description text">1 упаковка (30 г)</p>
               <p class="extra__item-number text">330 Р.</p>
-              <a href="#" class="button button__main catalog__item-button">Заказать</a>
+              <a href="#" class="button button__main catalog__item-button extra__item-button">Заказать</a>
             </li>
           </ul>
 
           <div class="extra__special-offer">
-            <p class="extra__special-offer-text text">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="extra__special-offer-text text">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
           </div>
         </div>
       </section>
@@ -263,13 +263,13 @@
   </main>
 
   <footer class="page-footer">
-    <section class="location">
+    <section class="location location--inner">
       <div class="location__wrapper">
         <h2 class="visually-hidden">Как нас найти</h2>
 
         <div class="location__content-wrapper">
-          <h3 class="heading heading--min location__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="text location__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <h3 class="heading heading--min location__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
+          <p class="text location__text">ул. Большая<br> Конюшенная, д. 19/8<br> <span class="location__text-space">Санкт-Петербург</span></p>
         </div>
       </div>
 
@@ -341,5 +341,8 @@
       </section>
     </div>
   </footer>
+
+  <script src="js/toggle.js"></script>
+</body>
 
 </html>
