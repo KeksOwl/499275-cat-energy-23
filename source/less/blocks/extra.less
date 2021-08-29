@@ -1,6 +1,16 @@
 .extra {
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .extra__wrapper {
@@ -9,25 +19,107 @@
 
   @media (min-width: @desktop-width) {
     grid-template-rows: none;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr max-content;
   }
 }
 
 .extra__title {
   font-size: 24px;
   line-height: 1em;
+
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+
+    margin-left: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: -68px;
+
+      width: 30px;
+      height: 2px;
+
+      background-color: @basic-green;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 70px;
+
+      left: -110px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: -20px;
+
+    width: 53px;
+    height: 2px;
+
+    background-color: @basic-green;
+
+    @media (min-width: @tablet-width) {
+      top: 22px;
+      right: -30px;
+
+      width: 328px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 957px;
+
+      right: -110px;
+    }
+  }
 }
 
 .extra__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  display: grid;
+  grid-template-rows: 1fr;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @grey-input-hover;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
 }
 
 .extra__item {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
+
+  border-bottom: 1px solid @grey-input-hover;
+
+  &:first-child {
+    border-top: 1px solid @grey-input-hover;
+
+    @media (min-width: @tablet-width) {
+      border-top: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      border-top: 1px solid @grey-input-hover;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     grid-template-rows: repeat(2, 1fr);
@@ -43,21 +135,87 @@
 .extra__item-name {
   font-size: 16px;
   line-height: 1em;
+
+  grid-column: ~"1 / -1";
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+
+    grid-column: ~"1 / 2";
+
+    margin-left: 38px;
+  }
 }
 
-// .extra__item-description {
-// }
+.extra__item-description {
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    grid-column: ~"2 / 3";
+
+    text-align: right;
+  }
+}
+
+.extra__item-number {
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-right: 38px;
+  }
+}
+
+.extra__item-button {
+  @media (min-width: @tablet-width) {
+    margin: 0 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: ~"4 / 5";
+
+    width: 244px;
+    margin: 0;
+  }
+}
 
 .extra__special-offer {
-  width: 280px;
   height: 289px;
 
   background-color: @main-green;
   background-image: url("../../img/extra/special-offer.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 43px;
+  padding-top: 186px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+
+    height: 200px;
+
+    padding: 69px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 245px;
+    height: 100%;
+
+    text-align: center;
+
+    padding: 42px;
+    padding-top: 134px;
+    /* Выровняем по пикселю */
+
+    margin-left: 79px;
   }
 }
 
@@ -66,4 +224,48 @@
   line-height: 20px;
 
   color: @main-white;
+
+  margin: 0;
+
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: max-content;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -120px;
+
+    transform: translateX(-50%);
+
+    width: 78px;
+    height: 80px;
+
+    background-image: url("../../img/extra/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      top: 50%;
+      left: -426px;
+
+      transform: translateY(-50%);
+
+      /* Баг с иконкой подарка: не резинится. Исправим позже */
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 50%;
+      top: -100%;
+
+      transform: translate(-50%, -50%);
+    }
+  }
 }

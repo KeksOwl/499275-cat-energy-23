@@ -1,7 +1,5 @@
-.catalog {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+// .catalog {
+// }
 
 .catalog__wrapper {
   display: grid;
@@ -22,10 +20,79 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.catalog__item {
+  padding: 11px 20px 14px 20px;
+  box-sizing: border-box;
+
+  border-bottom: 1px solid @grey-button-hover;
+
+  width: 100%;
+  min-height: 190px;
+
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content 1fr max-content;
+
+  &:first-child {
+    border-top: 1px solid @grey-button-hover;
+  }
+
+  &:nth-child(2n+2) {
+    @media (min-width: @tablet-width) {
+      justify-self: end;
+    }
+
+    @media (min-width: @desktop-width) {
+      justify-self: unset;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 39px 37px 39px 39px;
+    margin: 30px;
+
+    width: 324px;
+    min-height: 430px;
+
+    background-color: @basic-grey;
+
+    border: 2px solid @basic-grey;
+
+    grid-template-columns: none;
+    grid-template-rows: max-content 1fr max-content;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    padding: 40px 38px 40px 39px;
+    margin: 40px;
+
+    width: 245px;
+    min-height: 431px;
+  }
+
+  &--reveal {
+    grid-template-columns: none;
+    grid-template-rows: 1fr;
+
+    @media (min-width: @tablet-width) {
+      background-color: @main-white;
+    }
   }
 }
 
 .catalog__item-text {
+  margin: 0;
+  padding: 0;
+
   color: @additional-black;
 
   text-transform: uppercase;
@@ -33,8 +100,61 @@
   font-size: 16px;
   line-height: 20px;
 
+  order: 2;
+
+  max-width: 76px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+
+    justify-self: center;
+    text-align: center;
+
+    max-width: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 21px;
+  }
+
   &--reveal {
     color: @special-black;
+
+    max-width: unset;
+    text-align: center;
+    align-self: end;
+
+    grid-row: ~"1 / 2";
+
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+      max-width: 134px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 44%;
+      top: -40px;
+
+      width: 30px;
+      height: 2px;
+
+      background-color: @gray-more-icon;
+
+      @media (min-width: @tablet-width) {
+        width: 60px;
+
+        /* Потом по пикселю спозиционирую, окда? */
+      }
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
 
     &--additional {
       color: @special-grey;
@@ -43,7 +163,48 @@
 
       font-size: 12px;
       line-height: 16px;
+
+      max-width: unset;
+      text-align: center;
+
+      grid-row: ~"2 / 3";
+
+      @media (min-width: @tablet-width) {
+        font-size: 16px;
+        line-height: 18px;
+
+        max-width: 167px;
+      }
     }
+  }
+}
+
+.catalog__item-image {
+  text-align: center;
+  align-self: center;
+
+  grid-row: ~"1 / 3";
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+
+    display: none;
+
+    /* Временно скрыл до окончания разметки сетки */
+  }
+}
+
+.catalog__item-table {
+  order: 3;
+
+  align-self: center;
+
+  border-collapse: collapse;
+}
+
+.catalog__item-table-row {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @grey-input-hover;
   }
 }
 
@@ -52,14 +213,36 @@
 
   font-size: 12px;
   line-height: 16px;
+
+  &:last-child {
+    text-align: right;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .catalog__item-button {
-  padding: 10px 109px;
+  padding: 11px 11px;
+
+  grid-column: ~"1 / -1";
+  grid-row: ~"-1 / -2";
+
+  text-align: center;
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 11px 0;
+  }
 
   &--reveal {
     background-color: @basic-grey;
+
     color: @special-grey;
+    text-transform: uppercase;
+
+    grid-row: ~"3 / 4";
 
     &:hover {
       background-color: @grey-button-hover;
