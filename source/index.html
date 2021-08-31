@@ -6,13 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__main-wrapper">
       <a class="page-header__logo page-header__logo-icon page-header__logo--actual">
-        <img src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="33" height="38"
+            alt="Логотип Cat Energy">
+        </picture>
       </a>
 
       <a class="page-header__logo page-header__logo-title page-header__logo--actual">
@@ -45,8 +54,14 @@
 
       <p class="text promo__slogan">Занялся собой? Займись котом!</p>
       <div class="promo__image-wrapper">
-        <img class="promo__image" src="img/promo/promo-image-mobile.png" width="280" height="270"
-          alt="Сытный обед для котов Cat Energy Pro с курицей (500г)">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="img/promo/promo-image-desktop.png 1x, img/promo/promo-image-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/promo/promo-image-tablet.png 1x, img/promo/promo-image-tablet@2x.png 2x">
+          <img class="promo__image" src="img/promo/promo-image-mobile.png" width="280" height="270"
+            srcset="img/promo/promo-image-mobile@2x.png 2x" alt="Сытный обед для котов Cat Energy Pro с курицей (500г)">
+        </picture>
       </div>
       <a href="form.html" class="button button__main promo__button">Подобрать программу</a>
     </section>
@@ -82,23 +97,27 @@
 
       <ul class="features__list">
         <li class="features__item features__item--first">
-          <p class="text features__description features__description--healthy">Функциональное питание<br> содержит только полезные<br> питательные вещества.
+          <p class="text features__description features__description--healthy">Функциональное питание<br> содержит
+            только полезные<br> питательные вещества.
           </p>
         </li>
 
         <li class="features__item features__item--second">
-          <p class="text features__description features__description--powder">Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и
+          <p class="text features__description features__description--powder">Выпускается в виде порошка,<br> который
+            нужно лишь залить<br> кипятком и
             готово.
           </p>
         </li>
 
         <li class="features__item features__item--third">
-          <p class="text features__description features__description--food">Замените один-два приема<br> обычной еды на наше<br> функциональное питание.
+          <p class="text features__description features__description--food">Замените один-два приема<br> обычной еды на
+            наше<br> функциональное питание.
           </p>
         </li>
 
         <li class="features__item features__item--fourth">
-          <p class="text features__description features__description--time">Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!
+          <p class="text features__description features__description--time">Уже через месяц<br> наслаждайтесь
+            изменениями<br> к лучшему вашего питомца!
           </p>
         </li>
       </ul>
@@ -126,7 +145,8 @@
               </div>
 
               <div class="example__item">
-                <p class="example__conclusion">Затраты на питание: <span class="example__conclusion-space">15 000 руб.</span></p>
+                <p class="example__conclusion">Затраты на питание: <span class="example__conclusion-space">15 000
+                    руб.</span></p>
               </div>
             </div>
           </div>
@@ -136,22 +156,38 @@
 
             <div class="example__difference-images-wrapper">
               <div class="example__difference-image-wrapper example__difference-image-wrapper--before">
-                <img class="example__difference-image" src="img/example/example-before-mobile.png" width="280"
-                  height="232" alt="Борис до похудения">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                    srcset="img/example/example-desktop.png 1x, img/example/example-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/example/example-tablet.png 1x, img/example/example-tablet@2x.png 2x">
+                  <img class="example__difference-image" src="img/example/example-before-mobile.png" width="311"
+                    height="232" srcset="img/example/example-before-mobile@2x.png 2x" alt="Борис до похудения">
+                </picture>
               </div>
 
-              <div class="example__difference-image-wrapper example__difference-image-wrapper--after example__difference-image-wrapper--hidden">
-                <img class="example__difference-image" src="img/example/example-after-mobile.png" width="280"
-                  height="232" alt="Борис после похудения">
+              <div
+                class="example__difference-image-wrapper example__difference-image-wrapper--after example__difference-image-wrapper--hidden">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                    srcset="img/example/example-desktop.png 1x, img/example/example-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/example/example-tablet.png 1x, img/example/example-tablet@2x.png 2x">
+                  <img class="example__difference-image example__difference-image--after"
+                    src="img/example/example-after-mobile.png" width="251" height="240"
+                    srcset="img/example/example-after-mobile@2x.png 2x" alt="Борис после похудения">
+                </picture>
               </div>
             </div>
 
             <div class="example__difference-slider">
-              <button class="button example__difference-slider-button example__difference-slider-button--before example__difference-slider-button--pressed">Было</button>
+              <button
+                class="button example__difference-slider-button example__difference-slider-button--before example__difference-slider-button--pressed">Было</button>
               <div class="example__difference-slider-scale">
                 <div class="example__difference-slider-bar"></div>
               </div>
-              <button class="button example__difference-slider-button example__difference-slider-button--after">Стало</button>
+              <button
+                class="button example__difference-slider-button example__difference-slider-button--after">Стало</button>
             </div>
           </section>
         </div>
@@ -166,7 +202,8 @@
 
         <div class="location__content-wrapper">
           <h3 class="heading heading--min location__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
-          <p class="text location__text">ул. Большая<br> Конюшенная, д. 19/8<br> <span class="location__text-space">Санкт-Петербург</span></p>
+          <p class="text location__text">ул. Большая<br> Конюшенная, д. 19/8<br> <span
+              class="location__text-space">Санкт-Петербург</span></p>
         </div>
       </div>
 

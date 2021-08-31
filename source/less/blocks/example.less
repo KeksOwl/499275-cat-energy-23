@@ -13,8 +13,6 @@
 }
 
 .example__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
   margin-top: 42px;
   padding-top: 27px;
 
@@ -48,6 +46,9 @@
 }
 
 .example__content-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+
   @media (min-width: @tablet-width) {
     margin-left: 30px;
     margin-right: 30px;
@@ -62,7 +63,8 @@
 }
 
 .example__title {
-  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -262,6 +264,10 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 69px;
+
+    position: relative;
+
+    min-height: 462px;
   }
 
   @media (min-width: @desktop-width) {
@@ -269,21 +275,32 @@
 
     background-color: @basic-grey;
 
-    position: relative;
-
     min-width: 690px;
   }
 }
 
 .example__difference-images-wrapper {
-  width: 280px;
-  height: 232px;
+  width: 311px;
+  height: 240px;
 
   @media (min-width: @tablet-width) {
-    min-width: 280px;
-    width: unset;
-    min-height: 232px;
-    height: unset;
+    position: absolute;
+
+    width: 708px;
+    height: 620px;
+
+    bottom: 20px;
+
+    justify-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 690px;
+    height: 656px;
+
+    bottom: -20px;
+
+    z-index: 1;
   }
 }
 
@@ -291,27 +308,41 @@
   &--hidden {
     display: none;
   }
+}
+
+.example__difference-image {
+  &--after {
+    margin-left: 37px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 0;
+    }
+  }
 
   @media (min-width: @tablet-width) {
-    height: 500px;
-
-    display: none;
-    /* Временно скрыл до окончания разметки сетки */
+    width: 708px;
+    height: 620px;
   }
 }
 
 .example__difference-slider {
-  margin-top: 23px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: auto;
 
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 
   @media (min-width: @desktop-width) {
-    &::before {
+    margin-bottom: 72px;
+  }
+
+  &::before {
+    @media (min-width: @desktop-width) {
       content: "";
-      width: 67.5%;
-      height: 444px;
+      width: 67%;
+      height: 462px;
 
       position: absolute;
       top: 0;

@@ -89,39 +89,92 @@
       width: 200px;
       height: 200px;
 
-      display: none;
-      /* Временно скрыл до окончания разметки сетки */
+      left: unset;
+      top: 25%;
+      right: 8%;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100px;
+      height: 100px;
+
+      left: 7%;
+      top: 7%;
+      right: unset;
     }
   }
 
   &::after {
     content: "";
-    width: 80px;
-    height: 80px;
     position: absolute;
 
     background-repeat: no-repeat;
     background-position: 0 0;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-      /* Временно скрыл до окончания разметки сетки */
-    }
   }
 
   &--slim {
     &::after {
-      left: 25px;
-      top: 15px;
+      width: 36px;
+      height: 50px;
+
+      left: 28px;
+      top: 16px;
       background-image: url("../../img/bundles/cat-slim.svg");
+
+      @media (min-width: @tablet-width) {
+        width: 140px;
+        height: 194px;
+
+        left: unset;
+        right: 90px;
+        top: 85px;
+
+        background-size: 140px 194px;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 70px;
+        height: 97px;
+
+        left: 10%;
+        right: unset;
+        top: 5%;
+
+        background-size: 70px 97px;
+      }
     }
   }
 
   &--pro {
     &::after {
+      width: 67px;
+      height: 28px;
+
       left: 10px;
       top: 33px;
       background-image: url("../../img/bundles/cat-pro.svg");
+
+      @media (min-width: @tablet-width) {
+        width: 268px;
+        height: 112px;
+
+        left: unset;
+        right: 20px;
+        top: 140px;
+
+        background-size: 268px 112px;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 134px;
+        height: 56px;
+
+        left: 4%;
+        right: unset;
+        top: 13%;
+
+        background-size: 134px 56px;
+      }
     }
   }
 

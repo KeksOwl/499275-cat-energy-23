@@ -6,13 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="page-header page-header--border">
     <div class="page-header__main-wrapper">
       <a href="index.html" class="page-header__logo page-header__logo-icon">
-        <img src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="33" height="38"
+            alt="Логотип Cat Energy">
+        </picture>
       </a>
 
       <a href="index.html" class="page-header__logo page-header__logo-title">
@@ -27,13 +36,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html" class="site-list__link site-list__link--first">Главная</a>
+              <a href="index.html" class="site-list__link site-list__link--first site-list__link--inner">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html" class="site-list__link">Каталог продукции</a>
+              <a href="catalog.html" class="site-list__link site-list__link--inner">Каталог продукции</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link site-list__link--actual">Подбор программы</a>
+              <a class="site-list__link site-list__link--actual site-list__link--inner">Подбор программы</a>
             </li>
           </ul>
         </div>
