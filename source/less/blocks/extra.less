@@ -197,12 +197,18 @@
 
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/extra/special-offer@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     text-align: left;
 
     height: 200px;
 
     padding: 69px;
+
+    background-position: 50% 60%;
   }
 
   @media (min-width: @desktop-width) {
@@ -216,6 +222,9 @@
     /* Выровняем по пикселю */
 
     margin-left: 79px;
+
+    background-size: 110%;
+    background-position: 100% 10%;
   }
 }
 

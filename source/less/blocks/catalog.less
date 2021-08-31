@@ -67,7 +67,9 @@
     border: 2px solid @basic-grey;
 
     grid-template-columns: none;
-    grid-template-rows: max-content 1fr max-content;
+    grid-template-rows: repeat(3, max-content);
+
+    align-content: end;
   }
 
 
@@ -188,9 +190,25 @@
   @media (min-width: @tablet-width) {
     position: absolute;
 
-    display: none;
+    top: -280px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    /* Временно скрыл до окончания разметки сетки */
+  &--large {
+    @media (min-width: @tablet-width) {
+      top: -300px;
+    }
+  }
+}
+
+.catalog__item-picture {
+  min-width: 68px;
+  min-height: 86px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 161px;
+    min-height: 171px;
   }
 }
 
