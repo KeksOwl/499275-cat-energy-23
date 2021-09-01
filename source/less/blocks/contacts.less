@@ -32,16 +32,25 @@
 }
 
 .contacts__link {
-  &:hover path {
+  &:hover .contacts__link-social-icon {
     fill: @main-green;
+
+    &--stroke {
+      fill: none;
+      stroke: @main-green;
+    }
   }
 
-  &--stroke:hover path {
-    fill: none;
-    stroke: @main-green;
-  }
-
-  &:active {
+  &:active .contacts__link-social-icon {
     opacity: 0.3;
+  }
+}
+
+.contacts__link-social-icon {
+  fill: @gray-social;
+
+  &--stroke {
+    fill: none;
+    stroke: @gray-social;
   }
 }
