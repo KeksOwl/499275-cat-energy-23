@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -55,6 +55,12 @@
       <p class="text promo__slogan">Занялся собой? Займись котом!</p>
       <div class="promo__image-wrapper">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/promo/promo-image-desktop.webp 1x, img/promo/promo-image-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/promo/promo-image-tablet.webp 1x, img/promo/promo-image-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/promo/promo-image-mobile.webp 1x, img/promo/promo-image-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)"
             srcset="img/promo/promo-image-desktop.png 1x, img/promo/promo-image-desktop@2x.png 2x">
           <source media="(min-width: 768px)"
@@ -157,9 +163,12 @@
             <div class="example__difference-images-wrapper">
               <div class="example__difference-image-wrapper example__difference-image-wrapper--before">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/example/webp/example-desktop.webp 1x, img/example/webp/example-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/example/webp/example-tablet.webp 1x, img/example/webp/example-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/example/webp/example-before-mobile.webp 1x, img/example/webp/example-before-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/example/example-desktop.webp 1x, img/example/example-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/example/example-tablet.webp 1x, img/example/example-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/example/example-before-mobile.webp 1x, img/example/example-before-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/example/example-desktop.png 1x, img/example/example-desktop@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -172,9 +181,12 @@
               <div
                 class="example__difference-image-wrapper example__difference-image-wrapper--after example__difference-image-wrapper--hidden">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/example/webp/example-desktop.webp 1x, img/example/webp/example-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/example/webp/example-tablet.webp 1x, img/example/webp/example-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/example/webp/example-after-mobile.webp 1x, img/example/webp/example-after-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/example/example-desktop.webp 1x, img/example/webp/example-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/example/example-tablet.webp 1x, img/example/webp/example-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/example/example-after-mobile.webp 1x, img/example/webp/example-after-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/example/example-desktop.png 1x, img/example/example-desktop@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -270,8 +282,8 @@
     </div>
   </footer>
 
-  <script src="js/toggle.js"></script>
-  <script src="js/example-slider.js"></script>
+  <script src="js/toggle.min.js"></script>
+  <script src="js/example-slider.min.js"></script>
 </body>
 
 </html>
