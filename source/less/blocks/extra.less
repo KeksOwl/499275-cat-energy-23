@@ -1,15 +1,19 @@
 .extra {
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 4px;
 
   @media (min-width: @tablet-width) {
     margin-left: 30px;
     margin-right: 30px;
+    margin-top: 8px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 110px;
     margin-right: 110px;
+    margin-top: 6px;
+    margin-bottom: 85px;
   }
 }
 
@@ -29,10 +33,13 @@
 
   position: relative;
 
+  margin-bottom: 36px;
+
   @media (min-width: @tablet-width) {
     font-size: 36px;
 
     margin-left: 38px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: @desktop-width) {
@@ -104,10 +111,11 @@
 
 .extra__item {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content 1fr max-content;
 
   border-bottom: 1px solid @grey-input-hover;
+  padding-bottom: 17px;
 
   &:first-child {
     border-top: 1px solid @grey-input-hover;
@@ -123,20 +131,26 @@
 
   @media (min-width: @tablet-width) {
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: max-content 4fr 100px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-rows: none;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 180px max-content;
+    padding-bottom: 7px;
   }
 }
 
 .extra__item-name {
   font-size: 16px;
   line-height: 1em;
+  text-transform: uppercase;
 
   grid-column: ~"1 / -1";
+
+  margin: 0;
+  margin-top: 13px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -144,10 +158,18 @@
     grid-column: ~"1 / 2";
 
     margin-left: 38px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 
 .extra__item-description {
+  margin: 0;
+  margin-top: 15px;
+
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
@@ -155,6 +177,15 @@
     grid-column: ~"2 / 3";
 
     text-align: right;
+
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    margin-right: 0;
+    margin-left: 90px;
   }
 }
 
@@ -166,12 +197,20 @@
     line-height: 20px;
 
     margin-right: 38px;
+    margin-top: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    margin-right: 0;
+    margin-left: 98px;
   }
 }
 
 .extra__item-button {
   @media (min-width: @tablet-width) {
-    margin: 0 38px;
+    margin: 0 37px;
+    margin-bottom: 11px;
   }
 
   @media (min-width: @desktop-width) {
@@ -179,6 +218,8 @@
 
     width: 244px;
     margin: 0;
+    margin-right: 10px;
+    margin-top: 5px;
   }
 }
 
@@ -191,6 +232,8 @@
   background-size: cover;
   background-position: center;
 
+  margin-top: 38px;
+  margin-bottom: 36px;
   padding: 43px;
   padding-top: 186px;
   box-sizing: border-box;
@@ -209,6 +252,10 @@
     padding: 69px;
 
     background-position: 50% 60%;
+
+    margin-top: 67px;
+    margin-left: 1px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: @desktop-width) {
@@ -219,9 +266,9 @@
 
     padding: 42px;
     padding-top: 134px;
-    /* Выровняем по пикселю */
 
-    margin-left: 79px;
+    margin: 0;
+    margin-left: 70px;
 
     background-size: 110%;
     background-position: 100% 10%;
@@ -241,17 +288,20 @@
   @media (min-width: @tablet-width) {
     width: max-content;
     margin-left: auto;
+    margin-right: 56px;
+    margin-top: 3px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    margin-top: 50px;
   }
 
   &::before {
     content: "";
     position: absolute;
     left: 50%;
-    top: -120px;
+    top: -127px;
 
     transform: translateX(-50%);
 
@@ -262,8 +312,8 @@
     background-repeat: no-repeat;
 
     @media (min-width: @tablet-width) {
-      top: 50%;
-      left: -426px;
+      top: 45%;
+      left: -344px;
 
       transform: translateY(-50%);
 
@@ -271,8 +321,8 @@
     }
 
     @media (min-width: @desktop-width) {
-      left: 50%;
-      top: -100%;
+      left: 51%;
+      top: -88px;
 
       transform: translate(-50%, -50%);
     }

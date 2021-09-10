@@ -66,17 +66,17 @@
 
           <ul class="main-form__list">
             <li class="main-form__item main-form__item--reversed">
-              <input class="main-form__input" type="text" name="cat-name" id="cat-name" required>
+              <input class="main-form__input" type="text" name="cat-name" id="cat-name" value="Барсик" required>
               <label class="main-form__label" for="cat-name">Имя:*</label>
             </li>
 
             <li class="main-form__item main-form__item--reversed">
-              <input class="main-form__input" type="number" name="cat-weight" id="cat-weight" required>
+              <input class="main-form__input" type="number" name="cat-weight" id="cat-weight" value="7" required>
               <label class="main-form__label" for="cat-weight">Вес (кг):*</label>
             </li>
 
             <li class="main-form__item main-form__item--reversed">
-              <input class="main-form__input" type="number" name="cat-age" id="cat-age">
+              <input class="main-form__input" type="number" name="cat-age" id="cat-age" value="7">
               <label class="main-form__label" for="cat-age">Возраст (лет):</label>
             </li>
           </ul>
@@ -85,7 +85,7 @@
         <fieldset class="main-form__fieldset main-form__fieldset--border">
           <legend class="visually-hidden">Цель</legend>
 
-          <ul class="main-form__list">
+          <ul class="main-form__list main-form__list--radio">
             <li class="main-form__item">
               <input class="main-form__input visually-hidden" type="radio" name="weight" value="lose-weight"
                 id="lose-weight" checked>
@@ -106,45 +106,43 @@
         </fieldset>
       </div>
 
-      <fieldset class="main-form__fieldset">
+      <fieldset class="main-form__fieldset main-form__fieldset--contacts">
         <legend class="main-form__fieldset-title main-form__fieldset-title--contacts">Контактные данные (владельца кота)
         </legend>
 
-        <ul class="main-form__list">
-          <div class="main-form__inner">
-            <li class="main-form__item main-form__item--reversed">
-              <input class="main-form__input" type="email" name="owner-email" id="owner-email" required>
-              <label class="main-form__label" for="owner-email">E-mail:*</label>
-              <span class="main-form__mail">
-                <span class="visually-hidden">Почта</span>
-                <svg class="main-form__mail-icon" width="19" height="14">
-                  <use xlink:href="img/sprite.svg#icon-email"></use>
-                </svg>
-              </span>
-            </li>
+        <ul class="main-form__list main-form__list--inner">
+          <li class="main-form__item main-form__item--reversed">
+            <input class="main-form__input" type="email" name="owner-email" id="owner-email" value="kuklachev@gmail.com" required>
+            <label class="main-form__label" for="owner-email">E-mail:*</label>
+            <span class="main-form__mail">
+              <span class="visually-hidden">Почта</span>
+              <svg class="main-form__mail-icon" width="19" height="14">
+                <use xlink:href="img/sprite.svg#icon-email"></use>
+              </svg>
+            </span>
+          </li>
 
-            <li class="main-form__item main-form__item--reversed">
-              <input class="main-form__input" type="tel" name="owner-tel" id="owner-tel" required>
-              <label class="main-form__label" for="owner-tel">Телефон:*</label>
-              <span class="main-form__phone">
-                <span class="visually-hidden">Телефон</span>
-                <svg class="main-form__phone-icon" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-              </span>
-            </li>
-          </div>
+          <li class="main-form__item main-form__item--reversed">
+            <input class="main-form__input" type="tel" name="owner-tel" id="owner-tel" value="8 (960) 900-60-90" required>
+            <label class="main-form__label" for="owner-tel">Телефон:*</label>
+            <span class="main-form__phone">
+              <span class="visually-hidden">Телефон</span>
+              <svg class="main-form__phone-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </li>
         </ul>
       </fieldset>
 
-      <fieldset class="main-form__fieldset">
+      <fieldset class="main-form__fieldset main-form__fieldset--comment">
         <legend class="main-form__fieldset-title main-form__fieldset-title--comment">Комментарий</legend>
 
         <textarea class="main-form__input main-form__input--textarea" name="cat-behaviour"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
+          placeholder="Расскажите обо всех повадках кота">Расскажите обо всех повадках кота</textarea>
       </fieldset>
 
-      <fieldset class="main-form__fieldset">
+      <fieldset class="main-form__fieldset main-form__fieldset--extra">
         <legend class="main-form__fieldset-title main-form__fieldset-title--extra">Дополнительно</legend>
 
         <ul class="main-form__list main-form__list--extra">
@@ -184,7 +182,8 @@
         <h2 class="visually-hidden">Как нас найти</h2>
 
         <div class="location__content-wrapper">
-          <h3 class="heading heading--min location__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
+          <h3 class="heading heading--min location__title">Приглашаем<br> <span class="location__title-space">к
+              сотрудничеству</span> дилеров!</h3>
           <p class="text location__text">ул. Большая<br> Конюшенная, д. 19/8<br> <span
               class="location__text-space">Санкт-Петербург</span></p>
         </div>
@@ -208,7 +207,7 @@
           <li class="contacts__item">
             <a href="#" class="contacts__link">
               <span class="visually-hidden">VKontakte</span>
-              <svg class="contacts__link-social-icon" width="30" height="22">
+              <svg class="contacts__link-social-icon contacts__link-social-icon--first" width="30" height="22">
                 <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
               </svg>
             </a>
@@ -217,7 +216,7 @@
           <li class="contacts__item">
             <a href="#" class="contacts__link">
               <span class="visually-hidden">Instagram</span>
-              <svg class="contacts__link-social-icon" width="23" height="23">
+              <svg class="contacts__link-social-icon contacts__link-social-icon--second" width="23" height="23">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
@@ -226,7 +225,9 @@
           <li class="contacts__item">
             <a href="#" class="contacts__link">
               <span class="visually-hidden">Facebook</span>
-              <svg class="contacts__link-social-icon contacts__link-social-icon--stroke" width="22" height="22">
+              <svg
+                class="contacts__link-social-icon contacts__link-social-icon--stroke contacts__link-social-icon--third"
+                width="22" height="22">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>

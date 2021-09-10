@@ -22,17 +22,17 @@
   @media (min-width: @tablet-width) {
     margin-left: 71px;
     margin-right: 72px;
-    padding-top: 62px;
+    padding-top: 57px;
     padding-bottom: 51px;
     box-sizing: border-box;
 
-    height: 201px;
+    min-height: 192px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    left: 0.5%;
-    top: 2%;
+    left: 7.65%;
+    top: 24%;
 
     width: 570px;
     height: 201px;
@@ -47,20 +47,54 @@
 
     z-index: 1;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 53px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-45%, 28%);
+
+    background-image: url("../img/location/map-pin-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 57px 53px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location/map-pin-mobile@2x.png");
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 113px;
+      height: 106px;
+
+      transform: translate(-45%, 40%);
+
+      background-image: url("../img/location/map-pin-tablet.png");
+      background-size: 113px 106px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/location/map-pin-tablet@2x.png");
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 0;
+      left: 100%;
+      transform: translate(202%, 33%);
+    }
+  }
 }
 
 .location__content-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 18px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 14px;
-  }
+  column-gap: 5px;
 
   @media (min-width: @desktop-width) {
-    margin-top: 0;
-
     column-gap: 87px;
   }
 }
@@ -76,6 +110,18 @@
     font-size: 20px;
     line-height: 21px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 5px;
+  }
+}
+
+.location__title-space {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 4px;
+  }
 }
 
 .location__text {
@@ -86,6 +132,7 @@
 
   padding: 0;
   margin: 0;
+  margin-right: 2px;
 
   @media (min-width: @tablet-width) {
     text-align: right;
@@ -103,6 +150,10 @@
     display: block;
     margin-top: 16px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 20px;
+  }
 }
 
 .location__map {
@@ -110,4 +161,8 @@
   width: 100%;
   border: none;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    min-height: 400px;
+  }
 }

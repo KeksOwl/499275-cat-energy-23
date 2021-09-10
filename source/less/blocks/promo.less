@@ -14,6 +14,10 @@
     align-content: flex-start;
   }
 
+  @media (min-width: @desktop-width) {
+    justify-content: center;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -46,7 +50,7 @@
       min-height: 694px;
 
       right: 0;
-      top: -114px;
+      top: -19.7%;
 
       background-color: @main-green;
       background-image: url("../img/promo/page-header-cat-large.png");
@@ -64,23 +68,29 @@
 
 .promo__title {
   color: @main-white;
+  margin: 0;
+  margin-top: 27px;
 
   @media (min-width: @tablet-width) {
     color: @main-black;
 
-    margin-top: 62px;
+    margin-top: 60px;
     margin-left: 117px;
     margin-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 47px;
     margin-left: 190px;
     margin-right: 50%;
   }
 }
 
 .promo__slogan {
-  margin-top: 29px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+
+  margin-top: 25px;
   margin-bottom: 0;
 
   color: @main-white;
@@ -91,7 +101,7 @@
     color: @main-black;
 
     margin-top: 41px;
-    margin-left: 117px;
+    margin-left: 119px;
     margin-right: 30px;
 
     font-size: 20px;
@@ -138,7 +148,7 @@
     z-index: -1;
 
     position: absolute;
-    top: -15%;
+    top: -15.7%;
     left: 0;
   }
 
@@ -146,8 +156,8 @@
     width: 552px;
     height: 499px;
 
-    top: -350px;
-    left: 42%;
+    top: -368px;
+    left: 41.8%;
   }
 }
 
@@ -160,17 +170,23 @@
   width: 87.5%;
 
   box-sizing: border-box;
-  padding: 14px;
+  padding: 10px;
 
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 1px;
 
   @media (min-width: @tablet-width) {
     margin-top: 49px;
-    margin-left: 117px;
+    margin-left: 120px;
     margin-right: 30px;
 
     text-align: center;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
 
     min-width: 244px;
     min-height: 54px;
