@@ -16,18 +16,20 @@
 <body class="page__body">
   <header class="page-header page-header--border">
     <div class="page-header__main-wrapper">
-      <a href="index.html" class="page-header__logo page-header__logo-icon">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="33" height="38"
-            alt="Логотип Cat Energy">
-        </picture>
-      </a>
+      <div class="page-header__logo-wrapper">
+        <a href="index.html" class="page-header__logo page-header__logo-icon">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="33" height="38"
+              alt="Логотип Cat Energy">
+          </picture>
+        </a>
 
-      <a href="index.html" class="page-header__logo page-header__logo-title">
-        <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
-      </a>
+        <a href="index.html" class="page-header__logo page-header__logo-title">
+          <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
+        </a>
+      </div>
 
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -54,7 +56,7 @@
   <main class="page-main">
     <h1 class="page-heading page-main__title">Каталог продукции</h1>
 
-    <div class="catalog__wrapper">
+    <div class="page-main__wrapper">
       <section class="catalog">
         <h2 class="visually-hidden">Список основных товаров</h2>
 
@@ -88,7 +90,7 @@
                 <td class="catalog__item-table-data text">700 Р.</td>
               </tr>
             </table>
-            <a href="#" class="button button__main catalog__item-button">Заказать</a>
+            <a href="#" class="button button--main catalog__item-button">Заказать</a>
           </li>
 
           <li class="catalog__item">
@@ -101,8 +103,9 @@
                   srcset="img/catalog/cat-energy-pro-chicken-1000.webp 1x, img/catalog/cat-energy-pro-chicken-1000@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog/cat-energy-pro-chicken-1000-tablet.png 1x, img/catalog/cat-energy-pro-chicken-1000-tablet@2x.png 2x">
-                <img class="catalog__item-picture catalog__item-picture--large" src="img/catalog/cat-energy-pro-chicken-1000.png" width="84"
-                  height="100" srcset="img/catalog/cat-energy-pro-chicken-1000@2x.png 2x"
+                <img class="catalog__item-picture catalog__item-picture--large"
+                  src="img/catalog/cat-energy-pro-chicken-1000.png" width="84" height="100"
+                  srcset="img/catalog/cat-energy-pro-chicken-1000@2x.png 2x"
                   alt="Оранжевая упаковка Cat Energy PRO со вкусом курицы на 1000г">
               </picture>
             </a>
@@ -120,7 +123,7 @@
                 <td class="catalog__item-table-data text">1000 Р.</td>
               </tr>
             </table>
-            <a href="#" class="button button__main catalog__item-button">Заказать</a>
+            <a href="#" class="button button--main catalog__item-button">Заказать</a>
           </li>
 
           <li class="catalog__item">
@@ -152,7 +155,7 @@
                 <td class="catalog__item-table-data text">700 Р.</td>
               </tr>
             </table>
-            <a href="#" class="button button__main catalog__item-button">Заказать</a>
+            <a href="#" class="button button--main catalog__item-button">Заказать</a>
           </li>
 
           <li class="catalog__item">
@@ -165,8 +168,9 @@
                   srcset="img/catalog/cat-energy-pro-fish-1000.webp 1x, img/catalog/cat-energy-pro-fish-1000@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog/cat-energy-pro-fish-1000-tablet.png 1x, img/catalog/cat-energy-pro-fish-1000-tablet@2x.png 2x">
-                <img class="catalog__item-picture catalog__item-picture--large" src="img/catalog/cat-energy-pro-fish-1000.png" width="84"
-                  height="100" srcset="img/catalog/cat-energy-pro-fish-1000@2x.png 2x"
+                <img class="catalog__item-picture catalog__item-picture--large"
+                  src="img/catalog/cat-energy-pro-fish-1000.png" width="84" height="100"
+                  srcset="img/catalog/cat-energy-pro-fish-1000@2x.png 2x"
                   alt="Зелёная упаковка Cat Energy PRO со вкусом рыбы на 1000г">
               </picture>
             </a>
@@ -184,7 +188,7 @@
                 <td class="catalog__item-table-data text">1000 Р.</td>
               </tr>
             </table>
-            <a href="#" class="button button__main catalog__item-button">Заказать</a>
+            <a href="#" class="button button--main catalog__item-button">Заказать</a>
           </li>
 
           <li class="catalog__item" id="catalog-slim">
@@ -216,7 +220,7 @@
                 <td class="catalog__item-table-data text">400 Р.</td>
               </tr>
             </table>
-            <a href="#" class="button button__main catalog__item-button">Заказать</a>
+            <a href="#" class="button button--main catalog__item-button">Заказать</a>
           </li>
 
           <li class="catalog__item">
@@ -229,8 +233,9 @@
                   srcset="img/catalog/cat-energy-slim-buckwheat-1000.webp 1x, img/catalog/cat-energy-slim-buckwheat-1000@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog/cat-energy-slim-buckwheat-1000-tablet.png 1x, img/catalog/cat-energy-slim-buckwheat-1000-tablet@2x.png 2x">
-                <img class="catalog__item-picture catalog__item-picture--large" src="img/catalog/cat-energy-slim-buckwheat-1000.png" width="84"
-                  height="100" srcset="img/catalog/cat-energy-slim-buckwheat-1000@2x.png 2x"
+                <img class="catalog__item-picture catalog__item-picture--large"
+                  src="img/catalog/cat-energy-slim-buckwheat-1000.png" width="84" height="100"
+                  srcset="img/catalog/cat-energy-slim-buckwheat-1000@2x.png 2x"
                   alt="Синяя упаковка Cat Energy SLIM со вкусом гречки на 1000г">
               </picture>
             </a>
@@ -248,7 +253,7 @@
                 <td class="catalog__item-table-data text">700 Р.</td>
               </tr>
             </table>
-            <a href="#" class="button button__main catalog__item-button">Заказать</a>
+            <a href="#" class="button button--main catalog__item-button">Заказать</a>
           </li>
 
           <li class="catalog__item">
@@ -280,12 +285,13 @@
                 <td class="catalog__item-table-data text">500 Р.</td>
               </tr>
             </table>
-            <a href="#" class="button button__main catalog__item-button">Заказать</a>
+            <a href="#" class="button button--main catalog__item-button">Заказать</a>
           </li>
 
           <li class="catalog__item catalog__item--reveal">
             <p class="catalog__item-text catalog__item-text--reveal">Показать еще 100500 товаров</p>
-            <p class="catalog__item-text catalog__item-text--reveal catalog__item-text--additional text">На самом деле вкусов гораздо
+            <p class="catalog__item-text catalog__item-text--reveal catalog__item-text--additional text">На самом деле
+              вкусов гораздо
               больше!</p>
             <a href="#" class="button catalog__item-button catalog__item-button--reveal">Показать
               все</a>
@@ -302,28 +308,28 @@
               <p class="extra__item-name">Сахарозаменитель</p>
               <p class="extra__item-description text">1 упаковка (100 г)</p>
               <p class="extra__item-number text">200 Р.</p>
-              <a href="#" class="button button__main catalog__item-button extra__item-button">Заказать</a>
+              <a href="#" class="button button--main extra__item-button">Заказать</a>
             </li>
 
             <li class="extra__item">
               <p class="extra__item-name">Питьевая вода</p>
               <p class="extra__item-description text">5 литров</p>
               <p class="extra__item-number text">50 Р.</p>
-              <a href="#" class="button button__main catalog__item-button extra__item-button">Заказать</a>
+              <a href="#" class="button button--main extra__item-button">Заказать</a>
             </li>
 
             <li class="extra__item">
               <p class="extra__item-name">Молоко</p>
               <p class="extra__item-description text">1 литр</p>
               <p class="extra__item-number text">100 Р.</p>
-              <a href="#" class="button button__main catalog__item-button extra__item-button">Заказать</a>
+              <a href="#" class="button button--main extra__item-button">Заказать</a>
             </li>
 
             <li class="extra__item">
               <p class="extra__item-name">Витамины</p>
               <p class="extra__item-description text">1 упаковка (30 г)</p>
               <p class="extra__item-number text">330 Р.</p>
-              <a href="#" class="button button__main catalog__item-button extra__item-button">Заказать</a>
+              <a href="#" class="button button--main extra__item-button">Заказать</a>
             </li>
           </ul>
 

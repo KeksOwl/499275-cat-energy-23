@@ -16,18 +16,20 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__main-wrapper">
-      <a class="page-header__logo page-header__logo-icon page-header__logo--actual">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="33" height="38"
-            alt="Логотип Cat Energy">
-        </picture>
-      </a>
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo page-header__logo-icon page-header__logo--actual">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="33" height="38"
+              alt="Логотип Cat Energy">
+          </picture>
+        </a>
 
-      <a class="page-header__logo page-header__logo-title page-header__logo--actual">
-        <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
-      </a>
+        <a class="page-header__logo page-header__logo-title page-header__logo--actual">
+          <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
+        </a>
+      </div>
 
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -70,7 +72,7 @@
             srcset="img/promo/promo-image-mobile@2x.png 2x" alt="Сытный обед для котов Cat Energy Pro с курицей (500г)">
         </picture>
       </div>
-      <a href="form.html" class="button button__main promo__button">Подобрать программу</a>
+      <a href="form.html" class="button button--main promo__button">Подобрать программу</a>
     </section>
   </header>
 
@@ -203,7 +205,9 @@
               <button
                 class="button example__difference-slider-button example__difference-slider-button--before example__difference-slider-button--pressed">Было</button>
               <div class="example__difference-slider-scale">
-                <div class="example__difference-slider-bar"></div>
+                <div class="example__difference-slider-bar" tabindex="0">
+                  <span class="visually-hidden">Ползунок примера «до» и «после»</span>
+                </div>
               </div>
               <button
                 class="button example__difference-slider-button example__difference-slider-button--after">Стало</button>

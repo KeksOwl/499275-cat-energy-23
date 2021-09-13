@@ -16,18 +16,20 @@
 <body class="page__body">
   <header class="page-header page-header--border">
     <div class="page-header__main-wrapper">
-      <a href="index.html" class="page-header__logo page-header__logo-icon">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="33" height="38"
-            alt="Логотип Cat Energy">
-        </picture>
-      </a>
+      <div class="page-header__logo-wrapper">
+        <a href="index.html" class="page-header__logo page-header__logo-icon">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="33" height="38"
+              alt="Логотип Cat Energy">
+          </picture>
+        </a>
 
-      <a href="index.html" class="page-header__logo page-header__logo-title">
-        <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
-      </a>
+        <a href="index.html" class="page-header__logo page-header__logo-title">
+          <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
+        </a>
+      </div>
 
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -86,19 +88,19 @@
           <legend class="visually-hidden">Цель</legend>
 
           <ul class="main-form__list main-form__list--radio">
-            <li class="main-form__item">
+            <li class="main-form__item main-form__item--flex">
               <input class="main-form__input visually-hidden" type="radio" name="weight" value="lose-weight"
                 id="lose-weight" checked>
               <label class="main-form__label main-form__label--darken" for="lose-weight">Похудение</label>
             </li>
 
-            <li class="main-form__item">
+            <li class="main-form__item main-form__item--flex">
               <input class="main-form__input visually-hidden" type="radio" name="weight" value="weight-gain"
                 id="weight-gain">
               <label class="main-form__label main-form__label--darken" for="weight-gain">Набор массы</label>
             </li>
 
-            <li class="main-form__item">
+            <li class="main-form__item main-form__item--flex">
               <input class="main-form__input visually-hidden" type="radio" name="weight" value="consult" id="consult">
               <label class="main-form__label main-form__label--darken" for="consult">Не знаю (нужен ваш совет)</label>
             </li>
@@ -112,7 +114,8 @@
 
         <ul class="main-form__list main-form__list--inner">
           <li class="main-form__item main-form__item--reversed">
-            <input class="main-form__input" type="email" name="owner-email" id="owner-email" value="kuklachev@gmail.com" required>
+            <input class="main-form__input" type="email" name="owner-email" id="owner-email" value="kuklachev@gmail.com"
+              required>
             <label class="main-form__label" for="owner-email">E-mail:*</label>
             <span class="main-form__mail">
               <span class="visually-hidden">Почта</span>
@@ -123,7 +126,8 @@
           </li>
 
           <li class="main-form__item main-form__item--reversed">
-            <input class="main-form__input" type="tel" name="owner-tel" id="owner-tel" value="8 (960) 900-60-90" required>
+            <input class="main-form__input" type="tel" name="owner-tel" id="owner-tel" value="8 (960) 900-60-90"
+              required>
             <label class="main-form__label" for="owner-tel">Телефон:*</label>
             <span class="main-form__phone">
               <span class="visually-hidden">Телефон</span>
@@ -146,22 +150,22 @@
         <legend class="main-form__fieldset-title main-form__fieldset-title--extra">Дополнительно</legend>
 
         <ul class="main-form__list main-form__list--extra">
-          <li class="main-form__item">
+          <li class="main-form__item main-form__item--flex">
             <input class="main-form__input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
             <label class="main-form__label main-form__label--darkest" for="sweetener">Сахарозаменитель</label>
           </li>
 
-          <li class="main-form__item">
+          <li class="main-form__item main-form__item--flex">
             <input class="main-form__input visually-hidden" type="checkbox" name="water" id="water">
             <label class="main-form__label main-form__label--darkest" for="water">Питьевая вода</label>
           </li>
 
-          <li class="main-form__item">
+          <li class="main-form__item main-form__item--flex">
             <input class="main-form__input visually-hidden" type="checkbox" name="milk" id="milk">
             <label class="main-form__label main-form__label--darkest" for="milk">Молоко</label>
           </li>
 
-          <li class="main-form__item">
+          <li class="main-form__item main-form__item--flex">
             <input class="main-form__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
             <label class="main-form__label main-form__label--darkest" for="vitamins">Витамины</label>
           </li>
@@ -169,7 +173,7 @@
       </fieldset>
 
       <div class="main-form__footer">
-        <button class="button button__main main-form__button" type="submit">Отправить заявку</button>
+        <button class="button button--main main-form__button" type="submit">Отправить заявку</button>
 
         <p class="main-form__tip text">* — Обязательные поля</p>
       </div>
